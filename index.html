@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="src/style/reset.css">
+    <link rel="stylesheet" href="src/style/style.css">
+    <link rel="stylesheet" href="src/style/mainContent.css">
+    <title>Spotify</title>
+</head>
+
+<body>
+    <div class="sideBar-container">
+        <nav class="sideBar-navegation">
+            <div class="logo-navegation-spotify">
+                <a href="#">
+                    <img src="src/assets/icons/logo-spotify.png" alt="logo do spotify">
+                </a>
+                <ul class="sidebar-ul">
+                    <li class="icon-container">
+                        <a href="#" class="home-link">
+                            <i class="fa-solid fa-house"></i>
+                            <span>Home</span>
+                        </a>
+                    </li>
+                    <li class="icon-container">
+                        <a href="#" class="search-link">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                            <span>Buscar</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <div class="library">
+            <div class="library__content">
+                <button class="library__button">
+                    <i class="fa-solid fa-book"></i>
+                    <span> Sua biblioteca</span>
+                </button>
+                <span class="fa fa-plus"></span>
+            </div>
+            <section class="section-playlist">
+                <div class="section-playlist__content">
+                    <span class="text title">Crie sua primeira playlist</span>
+                    <span class="text subtitle">É fácil, vamos te ajudar.</span>
+                    <button style="cursor: pointer;" class="section-playlist__button">
+                        <span>Cria playlist</span>
+                    </button>
+                </div>
+            </section>
+            <div class="cookies">
+                <a href="">Cookies</a>
+            </div>
+            <div class="languages">
+                <button class="languages__button">
+                    <span class="fa fa-globe"></span>
+                    <span>Português do Brasil</span>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <main>
+        <div class="main-container">
+            <nav class="header-navigation">
+                <div class="navigation">
+                    <div class="buttons">
+                        <button class="arrow-left">
+                            <img src="src/assets/icons/small-left.png" alt="seta-para a esquerda">
+                        </button>
+                        
+                        <button class="arrow-right">
+                            <img src="src/assets/icons/small-right.png" alt="seta para a direita">
+                        </button>
+                    </div>
+
+                    <div class="header__search">
+                        <img src="src/assets/icons/search.png" alt="">
+                        <input data-js="search-input" id="search-input" type="text" maxlength="800" placeholder="O que você quer ouvir?">
+                    </div>
+
+                    <div class="header-login">
+                        <button class="subscribe">Inscreva-se</button>
+                        <button class="login">Entrar</button>
+                    </div>               
+                </div>
+            </nav>
+            <section class="main-content header-navigation">
+                <div data-js="cards-section" class="main-internal-content">
+                    <div class="main-text">
+                        <h1 class="first-title">Boa tarde</h1>
+                        <h3>Navegar por todas as seções</h3>
+                    </div>
+                <div data-js="grid-cards" class="grid-cards">
+                    <div style="background-color:rgb(0, 100, 80);" class="card Boas festas">
+                        <h1>Boas festas</h1>
+                        <img src="src/assets/playlist/1.jpeg" alt="">
+                    </div>
+                    <div style="background-color:  rgb(132, 0, 231);" class="card Feitos para você">
+                        <h1>Feitos para você</h1>
+                        <img src="src/assets/playlist/2.png" alt="">
+                    </div>
+                    <div style="background-color:rgb(30, 50, 100) ;" class="card Lançamentos">
+                        <h1>Lançamentos</h1>
+                        <img src="src/assets/playlist/3.jpeg" alt="">
+                    </div>
+                    <div style="background-color:rgb(140, 25, 50);" class="card Creators">
+                        <h1>Creators</h1>
+                        <img src="src/assets/playlist/4.jpeg" alt="">
+                    </div>
+                    <div style="background-color:  rgb(232, 17, 91);" class="card Para treinar">
+                        <h1>Para treinar</h1>
+                        <img src="src/assets/playlist/5.jpeg" alt="">
+                    </div>
+                    <div style="background-color:rgb(83, 122, 161);" class="card Podcast">
+                        <h1>Podcast</h1>
+                        <img src="src/assets/playlist/6.jpeg" alt="">
+                    </div>
+                    <div style="background-color:rgb(142, 102, 172);" class="card Sertanejo">
+                        <h1>Sertanejo</h1>
+                        <img src="src/assets/playlist/7.jpeg" alt="">
+                    </div>
+                    <div style="background-color:rgb(20, 138, 8);" class="card Samba e pagode">
+                        <h1>Samba e pagode</h1>
+                        <img src="src/assets/playlist/8.jpeg" alt="">
+                    </div>
+                    <div style="background-color:rgb(30, 50, 100);" class="card Funk">
+                        <h1>Funk</h1>
+                        <img src="src/assets/playlist/9.jpeg" alt="">
+                    </div>
+                    <div style="background-color:rgb(233, 20, 41);" class="card MPB">
+                        <h1>MPB</h1>
+                        <img src="src/assets/playlist/10.jpeg" alt="">
+                    </div>
+                    <div style="background-color:rgb(80, 55, 80);" class="card Rock">
+                        <h1>Rock</h1>
+                        <img src="src/assets/playlist/11.jpeg" alt="">
+                    </div>
+                    <div style="background-color:rgb(216, 64, 0);" class="card Hip Hop">
+                        <h1>Hip Hop</h1>
+                        <img src="src/assets/playlist/12.jpeg" alt="">
+                    </div>
+                    <div style="background-color:rgb(186, 93, 7);" class="card Indie">
+                        <h1>Indie</h1>
+                        <img src="src/assets/playlist/13.jpeg" alt="">
+                    </div>
+                    <div style="background-color:rgb(0, 30, 80);" class="card Relax">
+                        <h1>Relax</h1>
+                        <img src="src/assets/playlist/14.jpeg" alt="">
+                    </div>
+                    <div style="background-color:rgb(60, 30, 80);" class="card Música Latina">
+                        <h1>Música Latina</h1>
+                        <img src="src/assets/playlist/15.jpeg" alt="">
+                    </div>   
+                </div>
+               
+                </div>
+            </section>
+        </div>
+
+    </main>
+    <footer class="footer-container">
+        <div class="internal__content__footer">
+            <div class="title-footer">
+                <h4>TESTAR O PREMIUM DE GRAÇA</h4>
+                <p>Inscreva-se para curtir música ilimitada e podcast só com alguns anúncios. Não precisa de cartão
+                    de crédito</p>
+            </div>
+            <div class="button-footer">
+                <button type="button">
+                    <span>Inscreva-se grátis</span>
+                </button>
+            </div>
+
+        </div>
+    </footer>
+
+
+
+    <script src="app.js"></script>
+</body>
+
+</html>

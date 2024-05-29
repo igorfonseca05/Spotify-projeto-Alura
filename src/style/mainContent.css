@@ -1,0 +1,208 @@
+/* HEADER */
+
+.main-container {
+    max-width: 80vw;
+    height: 100vh;
+    margin-left: 320px;
+    margin-right: 56px;
+}
+
+.header-navigation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px;
+    margin: 10px;
+    border-radius: 8px;
+    background-color: #121212;
+}
+
+.header-navigation .navigation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 100%;
+}
+
+.buttons{
+    display: flex;
+}
+
+.header-navigation .navigation .arrow-left {
+    margin-right: 1.25rem;
+}
+
+.arrow-left, .arrow-right {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 32px;
+    height: 32px;
+    background: var(--bg-icon);
+    background-color: var(--bg-icon-bg);
+    border: none;
+    cursor: pointer;
+    border-radius: 30px;
+}
+
+input{
+    caret-color: rgb(255, 255, 255);
+    color: white;
+   font-size: 16px;
+}
+
+.header-login{
+    display: flex;
+    align-items: center;
+}
+
+.header__search{
+    display: flex;
+    align-items: center;
+    width: 364px;
+    height: 48px;
+    margin-left: 8px;
+    background-color: #242424;
+    border-radius: 500px;
+    border: 1px solid transparent;
+}
+
+.header__search img {
+    width: 16px;
+    height: 16px;
+    margin-left: 10px;
+}
+
+.header__search input{
+    background: transparent;
+    border: none;
+    padding: 0px 100px 0px 12px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    outline: none;
+}
+
+.header-login .subscribe {
+    color: #a7a7a7;
+    font-size: 16px;
+    font-weight: 700;
+    background-color: transparent;
+    margin-right: 32px;
+    border: none;
+    cursor: pointer;
+}
+
+.header-login .subscribe:hover {
+    color: #ffffff;
+   
+}
+
+.header-login .login{
+    border: none;
+    width: 100px;
+    height: 48px;
+    color: black;
+    font-size: 16px;
+    font-weight: 700;
+    border-radius: 40px;
+    cursor: pointer;
+} 
+.header-login .login:hover{
+background-color: white;
+}
+
+
+.main-internal-content{
+    width: 100%;
+    margin: 0 auto;
+}
+.main-content .first-title{
+    font-size: 30px;
+    font-weight: 800;
+    color: white;
+    padding: 30px;
+}
+
+.main-content h3{
+    font-size: 20px;
+    font-weight: 800;
+    color: white;
+    padding: 20px 30px;
+}
+
+.main-content .grid-cards{
+    padding: 10px 10px;
+    width: 90%;
+    height: 260px;
+    /* background-color: #ffffff; */
+    margin: 10px;
+    /* margin: 0 auto; */
+    overflow-y: scroll;
+    display: flex;
+    max-width: 850px;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 20px;
+}
+.main-content .grid-cards::-webkit-scrollbar{
+  display: none;
+}
+
+
+
+.card {
+    width: 230px;
+    height: 250px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.card h1 {
+    font-size: 25px;
+    color: white;
+    padding: 20px;
+}
+.card img {
+    width: 60%;
+    transform: translate(115px, 50px) rotateZ(20deg);
+}
+
+
+.hiddenCard {
+    transition: transform 0.3s ease-in-out;
+    animation: remove  0.4s ease-in-out forwards;
+   
+}
+
+@keyframes remove {
+    from {
+        display: block;
+        transform: scale(1);
+    }
+    to {
+        display: none;
+        transform: scale(0);
+    }
+    
+}
+
+.showCard {
+    transition: transform 0.3s ease-in-out;
+    animation: show 0.4s ease-in-out forwards;
+ 
+}
+
+
+@keyframes show {
+    from {
+        display: none;
+        transform: scale(0);
+    }
+    to {
+        display: block;
+        transform: scale(1);
+    }
+    
+}
